@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="课程名称"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+        <!--<Button-->
+            <!--android:text="刷新"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="20sp"-->
+            <!--android:id="@+id/btn_fresh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="4"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_lesson_detail"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_sign"
+        android:text="在线签到"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+</LinearLayout>
